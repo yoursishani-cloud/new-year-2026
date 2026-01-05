@@ -11,6 +11,7 @@
     height: 100%;
     overflow: hidden;
     font-family: 'Segoe UI', sans-serif;
+    background: #000; /* classic black background */
   }
 
   body {
@@ -18,16 +19,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(135deg, #ff5f6d, #ffc371, #47f0ff, #9b59b6);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
     color: white;
-  }
-
-  @keyframes gradientBG {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
   }
 
   .content {
@@ -76,7 +68,7 @@
 </div>
 
 <script>
-  const numSparks = 40; // keep original fireworks
+  const numSparks = 40; // original fireworks
   for (let i = 0; i < numSparks; i++) {
     const s = document.createElement("div");
     s.className = "spark";
